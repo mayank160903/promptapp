@@ -17,7 +17,7 @@ const Profile = ({ name, desc, newsData = [], handleEdit, handleDelete }) => {
   ];
 
   const getNewsByCategory = (category) => {
-    if(session?.user?.email === "mayank.g21@iiits.in"){
+    if(session?.user?.email === "jacobtecqworld@gmail.com"){
       return newsData?.filter((news) => news.category === category) || [];
     } else {
       return newsData;
@@ -27,7 +27,7 @@ const Profile = ({ name, desc, newsData = [], handleEdit, handleDelete }) => {
   return (
     <section className="w-full">
       <h1 className="head_text text-center">
-        {session?.user?.email !== "mayank.g21@iiits.in" ? (
+        {session?.user?.email !== "jacobtecqworld@gmail.com" ? (
           <div>
             <span className="blue_gradient">{name} Bookmarks</span>
           </div>
@@ -39,7 +39,7 @@ const Profile = ({ name, desc, newsData = [], handleEdit, handleDelete }) => {
       </h1>
       <p className="text-center">{desc}</p>
 
-      {session?.user?.email === "mayank.g21@iiits.in" ? (
+      {session?.user?.email === "jacobtecqworld@gmail.com" ? (
         <div className="mt-10">
           {categories.map((category) => (
             <NewsCardList

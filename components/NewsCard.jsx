@@ -219,7 +219,7 @@ const NewsCard = ({ news, handleEdit, handleDelete }) => {
       </button>
     </div>
 
-    {!isBookmarked && session?.user && session?.user?.email !== "mayank.g21@iiits.in" && (
+    {!isBookmarked && session?.user && session?.user?.email !== "jacobtecqworld@gmail.com" && (
       <button
         className="mt-4 w-full inline-flex items-center justify-center px-3 py-2 text-sm font-medium text-center text-white bg-gray-700 rounded-lg hover:bg-gray-900 focus:ring-4 focus:ring-blue-300"
         onClick={handleBookmark}
@@ -228,7 +228,7 @@ const NewsCard = ({ news, handleEdit, handleDelete }) => {
       </button>
     )}
 
-    {isBookmarked && session?.user?.email !== "mayank.g21@iiits.in" && (
+    {isBookmarked && session?.user?.email !== "jacobtecqworld@gmail.com" && (
       <div className="mt-4 flex items-center text-gray-400">
         <svg
           xmlns="http://www.w3.org/2000/svg"

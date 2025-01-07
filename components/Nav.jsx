@@ -139,7 +139,7 @@ const Nav = ({ searchQuery, setSearchQuery }) => {
 
         <PopoverGroup className="hidden items-center lg:flex lg:gap-x-12">
           <div className="hidden gap-5 lg:flex items-center">
-            {session?.user?.email !== "mayank.g21@iiits.in" ? (
+            {session?.user?.email !== "jacobtecqworld@gmail.com" ? (
               <Link
                 href="/contactus"
                 className=" font-semibold leading-6 text-gray-900 hover:text-gray-700"
@@ -188,7 +188,7 @@ const Nav = ({ searchQuery, setSearchQuery }) => {
 
           {session?.user ? (
             <>
-              {session?.user?.email !== "mayank.g21@iiits.in" && (
+              {session?.user?.email !== "jacobtecqworld@gmail.com" && (
                 <Link
                   href="/profile"
                   className="text-md font-semibold leading-6 text-gray-900 hover:text-gray-700"
@@ -209,7 +209,7 @@ const Nav = ({ searchQuery, setSearchQuery }) => {
                 </MenuButton>
                 <MenuItems className="absolute z-50 right-0 mt-2 w-48 bg-white rounded-lg shadow-lg ring-1 ring-gray-900/5">
                   <div className="p-4 space-y-2">
-                    {session?.user?.email === "mayank.g21@iiits.in" && (
+                    {session?.user?.email === "jacobtecqworld@gmail.com" && (
                       <div>
                         <Link
                           href="/create-news"
@@ -311,13 +311,13 @@ const Nav = ({ searchQuery, setSearchQuery }) => {
                 </Disclosure>
                 <Link
                   href={
-                    session?.user?.email !== "mayank.g21@iiits.in"
+                    session?.user?.email !== "jacobtecqworld@gmail.com"
                       ? "/contactus"
                       : "/contacts"
                   }
                   className="block rounded-lg py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
-                  {session?.user?.email !== "mayank.g21@iiits.in"
+                  {session?.user?.email !== "jacobtecqworld@gmail.com"
                     ? "Contact Us"
                     : "Messages"}
                 </Link>
@@ -333,7 +333,7 @@ const Nav = ({ searchQuery, setSearchQuery }) => {
               <div className="py-6 space-y-2">
                 {session?.user ? (
                   <>
-                    {session?.user?.email === "mayank.g21@iiits.in" && (
+                    {session?.user?.email === "jacobtecqworld@gmail.com" && (
                       <Link
                         href="/create-news"
                         className="block rounded-lg py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
@@ -343,7 +343,7 @@ const Nav = ({ searchQuery, setSearchQuery }) => {
                       
                     )}
                   
-                    {session?.user?.email !== "mayank.g21@iiits.in" && (
+                    {session?.user?.email !== "jacobtecqworld@gmail.com" && (
                       <Link
                         href="/profile"
                         className="block w-full text-left rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
@@ -351,7 +351,7 @@ const Nav = ({ searchQuery, setSearchQuery }) => {
                         Bookmarks
                       </Link>
                     )}
-                    {session?.user?.email === "mayank.g21@iiits.in" && (
+                    {session?.user?.email === "jacobtecqworld@gmail.com" && (
                       <Link
                         href="/profile"
                         className="flex justify-between rounded-lg py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"

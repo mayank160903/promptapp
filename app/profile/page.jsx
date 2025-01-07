@@ -14,7 +14,7 @@ const MyProfile = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      if (session?.user?.email === "mayank.g21@iiits.in") {
+      if (session?.user?.email === "jacobtecqworld@gmail.com") {
      
         const response = await fetch("/api/news");
         const data = await response.json();
@@ -56,11 +56,11 @@ const MyProfile = () => {
 
   return (
     <Profile
-      name={session?.user?.email === "mayank.g21@iiits.in" ?  "Admin" : "My"}
-      desc={session?.user?.email === "mayank.g21@iiits.in" ? "Welcome to the Admin Portal. Add, Edit, or Delete news based on your choice!" :  "Explore all your bookmarked news here."}
+      name={session?.user?.email === "jacobtecqworld@gmail.com" ?  "Admin" : "My"}
+      desc={session?.user?.email === "jacobtecqworld@gmail.com" ? "Welcome to the Admin Portal. Add, Edit, or Delete news based on your choice!" :  "Explore all your bookmarked news here."}
       newsData={newsData}
-      handleEdit={session?.user?.email === "mayank.g21@iiits.in" ? handleEdit : null}
-      handleDelete={session?.user?.email === "mayank.g21@iiits.in" ? handleDelete : null}
+      handleEdit={session?.user?.email === "jacobtecqworld@gmail.com" ? handleEdit : null}
+      handleDelete={session?.user?.email === "jacobtecqworld@gmail.com" ? handleDelete : null}
     />
   );
 };
